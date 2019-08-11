@@ -1,0 +1,39 @@
+p{
+  color: #000000;
+}
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+    background-color:  #ffffff !important;
+  box-shadow: 0 8px 6px -6px black;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.main-content{
+  background-color:  #FAFAFA;
+}
+.search-bar {
+    width: 70vw;
+    color: #111;
+    padding: 2px 6px;
+    font-size: 14px;
+    font-weight: 100;
+    border: 1px solid #ccc;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-right: none;
+    height: 32px;
+    box-shadow: #eee 0px 1px 2px 0px inset;
+}

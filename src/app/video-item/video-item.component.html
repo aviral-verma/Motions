@@ -1,0 +1,9 @@
+<div class="videos-list-container" *ngFor="let video of videos">
+  <div class="thumbnail">
+      <a routerLink="/video-player" routerLinkActive="active"><img (click)="onVideoSelected(video)" style="margin: 10px" src="{{this.video.snippet.thumbnails.medium.url}}" alt=""></a>
+  </div>
+  <div class="description">
+    <h3>{{this.video.snippet.title}}</h3>
+    <p>{{this.video.snippet.description}}</p>
+  </div>
+</div>

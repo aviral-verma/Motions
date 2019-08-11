@@ -1,0 +1,18 @@
+h1, h2, h3, h4, h5, h6 {
+    color: #0E0E0E;
+}
+p{
+    color: #606060;
+}
+
+.videos-list-container{
+    display: flex;
+    width: 70vw;
+}
+.thumbnail{
+    flex: 1;
+}
+
+.description{
+    flex: 2;
+}
