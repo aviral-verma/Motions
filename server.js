@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 
-app.use(express.static(___Motions + '/dist/YouTube/'));
+app.use(express.static(Motions + '/dist/YouTube/'));
 
 app.listen(process.env.PORT || 4200);
 
