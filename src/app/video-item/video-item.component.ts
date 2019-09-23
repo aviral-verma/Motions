@@ -19,6 +19,7 @@ export class VideoItemComponent implements OnInit {
   onVideoSelected(video){
    this.selectedVideoSrc = `https://www.youtube.com/embed/${video.id.videoId }`;
    this.videoService.selectedVideo = this.selectedVideoSrc;
+   console.log(`https://ssyoutube.com/embed/${video.id.videoId}`)
 
   }
 

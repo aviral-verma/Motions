@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { InjectionToken, NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,14 +11,17 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatFormFieldModule, MatGridListModule, MatCardModule, MatMenuModule } from '@angular/material';
 import {MatInputModule} from '@angular/material/input';
 import { FormsModule }   from '@angular/forms';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes,ActivatedRouteSnapshot} from '@angular/router';
 import { VideoItemComponent } from './video-item/video-item.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
+
+const externalUrlProvider = new InjectionToken('externalUrlRedirectResolver');
+const deactivateGuard = new InjectionToken('deactivateGuard');
 
 const appRoutes: Routes = [
-  { path: 'video-list', component: VideoListComponent }, 
+  { path: 'video-list', component: VideoListComponent}, 
   { path: 'video-player', component: VideoPlayerComponent }, 
-  // { path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({
@@ -27,7 +30,8 @@ const appRoutes: Routes = [
     VideoListComponent,
     VideoPlayerComponent,
     NavigationComponent,
-    VideoItemComponent
+    VideoItemComponent,
+    NotFoundComponent
   ],
   imports: [
     RouterModule.forRoot(

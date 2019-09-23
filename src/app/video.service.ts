@@ -18,7 +18,8 @@ export class VideoService {
                 part: 'snippet',
                 maxResults: 9,
                 // key: 'AIzaSyD2ZGoCy8IZTLYyoAdbQhRG2n66J1cdWTg',
-                key: 'AIzaSyCey3BKtfgdpr8FQpK1GBGGdIAH0UclQ5I',
+                // key: 'AIzaSyCey3BKtfgdpr8FQpK1GBGGdIAH0UclQ5I',
+                key: 'AIzaSyADR5nw4MmGzzW9aUOVD6piq5K9TdO7iRc',
                 q: event.target.value,
             }
     });
